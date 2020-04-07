@@ -1,19 +1,17 @@
-/* Logo 字体 */
-@font-face {
-  font-family: "iconfont logo";
-  src: url('https://at.alicdn.com/t/font_985780_km7mi63cihi.eot?t=1545807318834');
-  src: url('https://at.alicdn.com/t/font_985780_km7mi63cihi.eot?t=1545807318834#iefix') format('embedded-opentype'),
-    url('https://at.alicdn.com/t/font_985780_km7mi63cihi.woff?t=1545807318834') format('woff'),
-    url('https://at.alicdn.com/t/font_985780_km7mi63cihi.ttf?t=1545807318834') format('truetype'),
-    url('https://at.alicdn.com/t/font_985780_km7mi63cihi.svg?t=1545807318834#iconfont') format('svg');
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
-.logo {
-  font-family: "iconfont logo";
-  font-size: 160px;
+.c-logo {
+  font-size: 40px;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+.c-logo a {
+  color: #333;
 }
 
 /* tabs */
@@ -77,7 +75,6 @@
 }
 
 .main .logo a {
-  font-size: 160px;
   color: #333;
 }
 
