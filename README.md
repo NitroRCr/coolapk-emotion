@@ -2,6 +2,8 @@
 酷安表情包原版/svg重制版，提供CSS和JavaScript使用方法，可用于个人网页/博客
 <br>
 
+原版png来源于酷安安装包拆包，原作者为<a href="https://coolapk.com/">酷安</a>，禁止用于商业用途。
+
 ## 使用方法
 如果只是需要 原版`png`/ 重制版`svg`文件，下载即可，在`/source`目录
 
@@ -33,10 +35,9 @@ __需要`jQuery`，必须先引入`jQuery`！__
 
 <br>
 
-<p>这是一段话<i class="c-coolb"></i>中间有个酷币</p>
+<p>这是一段话<i style="background:url(https://emotion.texice.xyz/source/png/c-coolb.png);height:1em;width:1em"></i>中间有个酷币</p>
 
 ```html
 <p>这是一段话<i class="c-coolb"></i>中间有个酷币</p>
 ```
 
-<script src="https://emotion.texice.xyz/svg-edition/coolapk-emotion.js"></script>
