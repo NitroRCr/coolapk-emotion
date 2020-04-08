@@ -35,9 +35,23 @@ __需要`jQuery`，必须先引入`jQuery`！__
 
 <br>
 
-<p>这是一段话<i style="background:url(https://emotion.texice.xyz/source/png/c-coolb.png);height:1em;width:1em"></i>中间有个酷币</p>
+<p>这是一段话<img src="https://emotion.texice.xyz/source/png/c-coolb.png" style="height:1em;display:inline">中间有个酷币</p>
 
 ```html
 <p>这是一段话<i class="c-coolb"></i>中间有个酷币</p>
+```
+
+其中"<img src="https://emotion.texice.xyz/source/png/c-coolb.png" style="height:1em;display:inline">"的类名为`c-coolb`
+
+对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/svg-edition/demo.html)页面
+
+### 注意
+
+这种使用 Symbol 引用的方法，引用时使用的`<i>`标签会在页面加载时被替换为相应的`<svg>`标签。
+
+也就是说 原`<i>`标签会被删除，展示的是`<svg>`标签。页面加载后，新加的`<i>`标签表情不会被正常显示，直到调用`setCoolapkEmotion()`函数再次进行替换：
+
+```javascript
+setCoolapkEmotion();
 ```
 
