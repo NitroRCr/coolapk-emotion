@@ -17,7 +17,7 @@
 <img src="https://coolemotion.netlify.com/source/png/c-coolb.png">
 ```
 
-这里使用了类名为`c-coolb`的`png`图像，对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/svg-edition/demo.html)页面
+这里使用了类名为`c-coolb`的`png`图像，对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
 
 ### 使用JS插件
 
@@ -75,7 +75,7 @@
 
 这将引入一个类名为`c-coolb`的图标到这段话中
 
-对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/svg-edition/demo.html)页面
+对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
 
 <br>
 
