@@ -145,7 +145,7 @@ function initCoolapkEmotion() {
     var inner = '';
     for (let i in emotionNameList){
         let x = emotionNameList[i];
-        inner += 'i.'+x+'{background: url(https://coolemotion.netlify.com/source/png/'+x+'.png); height:1em; width:1em; display:inline-block; background-size:contain;}';
+        inner += 'i.'+x+'{background: url(https://coolemotion.netlify.com/source/png/'+x+'.png); height:1em; width:1em; display:inline-block; background-size:contain; transform:translateY(0.15em);}';
     }
     var style = document.createElement('style');
     style.innerHTML=inner;
