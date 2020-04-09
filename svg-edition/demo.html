@@ -1176,6 +1176,10 @@
                 <p>使用步骤如下：</p>
                 <p style="font-weight: bold;">必须先引入 jQuery</p>
                 <h3 id="-symbol-">第一步：引入 coolapk-emotion.js：</h3>
+                <h4>无需下载的方式，但中国大陆可能会加载缓慢</h4>
+                <pre><code class="language-html">&lt;script src="https://coolemotion.netlify.com/svg-edition/coolapk-emotion.js"&gt;&lt;/script&gt;
+</code></pre>
+                <h4>或者<a href="https://github.com/NitroRCr/coolapk-emotion/releases">下载</a>之后引入</h4>
                 <pre><code class="language-html">&lt;script src="./coolapk-emotion.js"&gt;&lt;/script&gt;
 </code></pre>
            <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
@@ -1184,7 +1188,7 @@
                 <h2>注意</h2>
                 <p>这种使用 Symbol 引用的方法，引用时使用的<code>&lt;i&gt;</code>标签会在页面加载时被替换为相应的<code>&lt;svg&gt;</code>标签。
 
-                  也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，新加的&lt;i&gt;标签表情不会被正常显示，直到调用`setCoolapkEmotion()`函数再次进行替换。</p>
+                  也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，如果有新加的&lt;i&gt;标签表情则不会被正常显示，直到调用`setCoolapkEmotion()`函数再次进行替换。</p>
             </div>
         </div>
 
