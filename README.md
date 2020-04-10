@@ -19,6 +19,8 @@
 
 这里使用了类名为`c-coolb`的`png`图像，对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
 
+<hr>
+
 ### 使用JS插件
 
 插件也分为`png`版和`svg`版
@@ -29,7 +31,7 @@
 
 表情图标将会以`svg`的形式展现，因此在任意屏幕分辨率下都能达到最佳清晰度。
 
-不过每次使用都会加载整个插件（约1.2MB），即使您的页面只使用了一个表情图标
+不过使用会加载整个插件（约1.2MB），即使您的页面只使用了一个表情图标。当然，加载一次后它会缓存到本地。
 
 ### png
 
@@ -40,6 +42,8 @@
 <br>
 
 使用步骤如下：
+
+<hr>
 
 ### 引入
 
@@ -62,6 +66,8 @@
 <!-- png 版本 | svg edition -->
 <script src="./coolapk-emotion-svg.min.js"></script>
 ```
+
+<hr>
 
 ### 在页面中使用
 
@@ -107,9 +113,10 @@ setCoolapkEmotion();
 
 以下原理内容您不必了解
 
-<p>多色svg图标无法直接使用，为了能够简便使用，svg 版本用了 Symbol 引用方法。</p>
+<p>多色svg图标无法直接使用，为了能够简便使用，svg 版本用了 Symbol 引用方法，此方法由 <a href="https://www.iconfont.cn/">iconfont+</a> 提供</p>
 <p>正如其名，Symbol 引用方式不同于一般的使用，使用时写下的只是 Symbol，然后JS会将 Symbol 替换为真正的 SVG，并实现完整的 SVG 效果。</p>
-<p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。此方法由 <a href="https://www.iconfont.cn/">iconfont+</a> 提供，相关介绍可以参考这篇<a href="https://www.iconfont.cn/help/detail?helptype=code">文章</a><br>我进行了一些改进：将 Symbol 代码进一步封装，集成 CSS 到 JS ，使得引用更为简便。<br>这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p><ul><li>支持多色图标了，不再受单色限制。</li><li>通过一些技巧，支持像字体那样，通过 <code>font-size</code>, <code>color</code> 来调整样式。</li><li>兼容性较差，支持 IE9+，及现代浏览器。</li><li>浏览器渲染 SVG 的性能一般，还不如 png。</li></ul>
+
+> <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="https://www.iconfont.cn/help/detail?helptype=code">文章</a><br>我进行了一些改进：将 Symbol 代码进一步封装，集成 CSS 到 JS ，使得引用更为简便。<br>这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p><ul><li>支持多色图标了，不再受单色限制。</li><li>通过一些技巧，支持像字体那样，通过 <code>font-size</code>, <code>color</code> 来调整样式。</li><li>兼容性较差，支持 IE9+，及现代浏览器。</li><li>浏览器渲染 SVG 的性能一般，还不如 png。</li></ul>
 
 这种使用 Symbol 引用的方法，引用时使用的`<i>`标签会在页面加载时被替换为相应的`<svg>`标签。
 
@@ -118,4 +125,3 @@ setCoolapkEmotion();
 ```javascript
 setCoolapkEmotion();
 ```
-
