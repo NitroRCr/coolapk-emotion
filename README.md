@@ -1,5 +1,5 @@
 # coolapk-emotion
-酷安表情包原版/svg重制版，提供CSS和JavaScript使用方法，可用于个人网页/博客
+酷安表情包原版/svg重制版，提供JavaScript使用方法，可用于个人网页/博客
 <br>
 
 原版png来源于酷安安装包拆包，表情包原作者为<a href="https://coolapk.com/">酷安</a>，禁止用于商业用途。
@@ -51,7 +51,7 @@
 <!-- svg 版本 | svg edition -->
 <script src="https://coolemotion.netlify.com/svg-edition/coolapk-emotion-svg.js"></script>
 <!-- png 版本 | svg edition -->
-<script src="https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.js"></script>
+<script src="https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.min.js"></script>
 ```
 
 或者下载之后引入
@@ -60,7 +60,7 @@
 <!-- svg 版本 | svg edition -->
 <script src="./coolapk-emotion-svg.js"></script>
 <!-- png 版本 | svg edition -->
-<script src="./coolapk-emotion-svg.js"></script>
+<script src="./coolapk-emotion-svg.min.js"></script>
 ```
 
 ### 在页面中使用

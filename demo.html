@@ -1159,7 +1159,7 @@
             <div class="article markdown">
                 <h2 id="symbol-">coolapk-emotion</h2>
                 <hr>
-                <p>酷安表情包原版/svg重制版，提供CSS和JavaScript使用方法，可用于个人网页/博客</p>
+                <p>酷安表情包原版/svg重制版，提供JavaScript使用方法，可用于个人网页/博客</p>
                 <p>以上展示的为 svg 版本</p>
                 <p>
                     原版png来源于酷安安装包拆包，表情包原作者为<a href="https://coolapk.com/">酷安</a>，禁止用于商业用途。
@@ -1189,13 +1189,13 @@
                 <pre><code class="language-html">&lt;!-- svg 版本 | svg edition --&gt;
 &lt;script src=&quot;https://coolemotion.netlify.com/svg-edition/coolapk-emotion-svg.js&quot;&gt;&lt;/script&gt;
 &lt;!-- png 版本 | svg edition --&gt;
-&lt;script src=&quot;https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
                 <p>或者下载之后引入</p>
                 <pre><code class="language-html">&lt;!-- svg 版本 | svg edition --&gt;
 &lt;script src=&quot;./coolapk-emotion-svg.js&quot;&gt;&lt;/script&gt;
 &lt;!-- png 版本 | svg edition --&gt;
-&lt;script src=&quot;./coolapk-emotion-svg.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./coolapk-emotion-svg.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
                 <h3>在页面中使用</h3>
                 <p>参考以下例子：</p>
@@ -1203,7 +1203,7 @@
                 <p><p>这是一段话<i class="c-coolb"></i>中间有个酷币</p></p>
                 <pre><code class="language-html">&lt;p&gt;这是一段话&lt;i class=&quot;c-coolb&quot;&gt;&lt;/i&gt;中间有个酷币&lt;/p&gt;
 </code></pre>
-                <p>这将引入一个类名为`c-coolb`的图标到这段话中，对于每个图标的预览及类名，请看页面上方</p>
+                <p>这将引入一个类名为<code>c-coolb</code>的图标到这段话中，对于每个图标的预览及类名，请看页面上方</p>
                 <h3>关于 Symbol 引用方法</h3>
                 <p>以下原理内容您不必了解</p>
                 <p>多色svg图标无法直接使用，为了能够简便使用，这里用了 Symbol 引用方法。</p>
@@ -1218,25 +1218,14 @@
                     <li>兼容性较差，支持 IE9+，及现代浏览器。</li>
                     <li>浏览器渲染 SVG 的性能一般，还不如 png。</li>
                 </ul>
-                <h2>使用方法</h2>
-                <p>以酷币<i class="c-coolb"></i>(c-coolb)为例。</p>
-                <p>使用步骤如下：</p>
-                <p style="font-weight: bold;">必须先引入 jQuery</p>
-                <h3 id="-symbol-">第一步：引入 coolapk-emotion-svg.js：</h3>
-                <h4>无需下载的方式，但中国大陆可能会加载缓慢</h4>
-                <pre><code class="language-html">&lt;script src="https://coolemotion.netlify.com/svg-edition/coolapk-emotion-svg.js"&gt;&lt;/script&gt;
-</code></pre>
-                <h4>或者<a href="https://github.com/NitroRCr/coolapk-emotion/releases">下载</a>之后引入</h4>
-                <pre><code class="language-html">&lt;script src="./coolapk-emotion-svg.js"&gt;&lt;/script&gt;
-</code></pre>
-           <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
-                <pre><code class="language-html">&lt;i class="c-coolb"&gt;&lt;/i&gt;
-</code></pre>
+                
                 <h2>注意</h2>
                 <p>这种使用 Symbol 引用的方法，引用时使用的<code>&lt;i&gt;</code>标签会在页面加载时被替换为相应的<code>&lt;svg&gt;</code>标签。
 
-                  也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，如果有新加的&lt;i&gt;标签表情则不会被正常显示，直到调用`setCoolapkEmotion()`函数再次进行替换。</p>
-            </div>
+                  也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，如果有新加的&lt;i&gt;标签表情则不会被正常显示，直到调用<code>setCoolapkEmotion()</code>函数再次进行替换。</p>
+                  <pre><code class="language-javascript">setCoolapkEmotion();
+</code></pre>
+                </div>
         </div>
 
     </div>
