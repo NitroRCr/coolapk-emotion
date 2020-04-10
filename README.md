@@ -1,5 +1,5 @@
 # coolapk-emotion
-酷安表情包原版/svg重制版，提供JavaScript使用方法，可用于个人网页/博客
+酷安表情包原版/svg重制版，提供JavaScript插件使用方法，可用于个人网页/博客
 <br>
 
 原版png来源于酷安安装包拆包，表情包原作者为<a href="https://coolapk.com/">酷安</a>，禁止用于商业用途。
@@ -33,9 +33,9 @@
 
 ### png
 
-以`<i>`标签背景图片形式展现，因为浏览器的渲染不同，可能不能达到最佳清晰度，且放大后模糊。
+表情图标将会以`<i>`标签背景图片形式展现，因为浏览器的渲染不同，可能不能达到最佳清晰度，且放大后模糊。
 
-不过只有当您使用该表情图标时才会加载对应的图片，相当省流。
+优点是只有当您使用该表情图标时才会加载对应的图片，相当省流。
 
 <br>
 
@@ -77,13 +77,37 @@
 
 对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
 
-<br>
+<hr>
+
+### 值得注意
+
+svg 版本使用 Symbol 引用的方法（详见下方），引用时使用的`<i>`标签会在页面加载时被替换为相应的`<svg>`标签。
+
+也就是说 原`<i>`标签会被删除，展示的是`<svg>`标签。因此在页面加载后，如果有新加的`<i>`标签表情则不会被正常显示，直到调用`setCoolapkEmotion()`函数再次进行替换：
+
+```javascript
+setCoolapkEmotion();
+```
+
+<hr>
+
+另外，<code>png</code> 版本的表情图标有<code>transform</code>属性，以在文本中显示到与文字相平的位置：
+
+<code>transform: translateY(0.15em);</code>
+
+某些情况下，您可能不需要此属性，加上<code>.no-transform</code>类名即可：
+
+```html
+<i class="c-coolb no-transform"></i>
+```
+
+<hr>
 
 ### 关于 Symbol 引用方法
 
 以下原理内容您不必了解
 
-<p>多色svg图标无法直接使用，为了能够简便使用，这里用了 Symbol 引用方法。</p>
+<p>多色svg图标无法直接使用，为了能够简便使用，svg 版本用了 Symbol 引用方法。</p>
 <p>正如其名，Symbol 引用方式不同于一般的使用，使用时写下的只是 Symbol，然后JS会将 Symbol 替换为真正的 SVG，并实现完整的 SVG 效果。</p>
 <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。此方法由 <a href="https://www.iconfont.cn/">iconfont+</a> 提供，相关介绍可以参考这篇<a href="https://www.iconfont.cn/help/detail?helptype=code">文章</a><br>我进行了一些改进：将 Symbol 代码进一步封装，集成 CSS 到 JS ，使得引用更为简便。<br>这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p><ul><li>支持多色图标了，不再受单色限制。</li><li>通过一些技巧，支持像字体那样，通过 <code>font-size</code>, <code>color</code> 来调整样式。</li><li>兼容性较差，支持 IE9+，及现代浏览器。</li><li>浏览器渲染 SVG 的性能一般，还不如 png。</li></ul>
 
