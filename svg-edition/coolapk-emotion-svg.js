@@ -143,7 +143,7 @@ var emotionNameList = [
 ];
 $(document).ready(setCoolapkEmotion);
 
-$('head').append($('<style>.coolapk-emotion {width: 1em; height: 1em; vertical-align: -0.15em; fill: currentColor; overflow: hidden;}</style>'));
+$('head').append($('<style type="text/css">.coolapk-emotion {width: 1em; height: 1em; vertical-align: -0.15em; fill: currentColor; overflow: hidden;}</style>'));
 
 function setCoolapkEmotion() {
     for (let i in emotionNameList) {

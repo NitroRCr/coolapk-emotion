@@ -149,6 +149,7 @@ function initCoolapkEmotion() {
     }
     inner += 'i.no-transform{transform:translateY(0);}';
     var style = document.createElement('style');
+    style.type = 'text/css';
     style.innerHTML=inner;
     document.head.appendChild(style);
 }
