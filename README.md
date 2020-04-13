@@ -1,6 +1,7 @@
 # coolapk-emotion
-酷安表情包原版/svg重制版，提供JavaScript插件使用方法，可用于个人网页/博客
-<br>
+酷安 emoji 表情包原版/svg重制版，提供JavaScript插件使用方法，可用于个人网页/博客
+
+[Demo](https://emotion.texice.xyz/demo.html) 页面<br>
 
 原版png来源于酷安安装包拆包，表情包原作者为<a href="https://coolapk.com/">酷安</a>，禁止用于商业用途。
 
