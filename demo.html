@@ -1166,6 +1166,9 @@
                     <br>
                 </p>
                 <h2>使用方法</h2>
+                · 使用原文件<br>
+                · 使用JS插件<br>
+                · Hexo 使用指南<br>
                 <h3>使用原文件</h3>
                 <p>如果只是想使用原<code>png</code>，<code>svg</code>文件，可直接下载<br>
                     如果应用于网页，也可以不必下载，使用每个文件对应的链接，比如：</p>
@@ -1176,12 +1179,13 @@
                 <p>插件也分为<code>png</code>版和<code>svg</code>版<br>
                     它们使用起来同样的简便，主要差别如下：</p>
                 <h3>svg</h3>
+                <span style="font-weight: bold;">需要 jQuery</span>
                 <p>表情图标将会以<code>svg</code>的形式展现，因此在任意屏幕分辨率下都能达到最佳清晰度。</p>
                 <p>不过使用会加载整个插件（约1.2MB），即使您的页面只使用了一个表情图标。当然，加载一次后它会缓存到本地。</p>
                 <h3>png</h3>
                 <p>表情图标将会以<code>&lt;i&gt;</code>标签背景图片形式展现，因为浏览器的渲染不同，可能不能达到最佳清晰度，且放大后模糊。</p>
                 <p>不过只有当您使用该表情图标时才会加载对应的图片，相当省流。</p>
-                <br>
+                <p>原生 JS 支持</p>
                 <p>使用步骤如下：</p>
                 <h3>引入</h3>
                 <p>只需引入 JS，CSS 已集成至 JS ，两个版本任选其一</p>
@@ -1234,6 +1238,13 @@
                   也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，如果有新加的&lt;i&gt;标签表情则不会被正常显示，直到调用<code>setCoolapkEmotion()</code>函数再次进行替换。</p>
                   <pre><code class="language-javascript">setCoolapkEmotion();
 </code></pre>
+                <h3>Hexo 使用指南</h3>
+                <p>由于我的博客是 Hexo 框架，也不熟悉其他框架，所以这里只为 Hexo 提供参考。
+                    这里只提一种方法
+                    在`hexo`的`/scaffolds/post.md`（文章模板文件）最下方加上：</p>
+                <pre><code class="language-html">&lt;script src=&quot;https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+                <p>即可在新建的文章中使用。</p>
                 </div>
         </div>
 
