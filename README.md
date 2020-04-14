@@ -1,5 +1,7 @@
 # coolapk-emotion
-酷安 emoji 表情包原版/svg重制版，可快速简便地用于个人网页与博客。
+酷安 emoji 表情包原版 & svg重制版，可快速简便地用于个人网页与博客。
+
+![](https://coolemotion.netlify.com/source/other/0.png)
 
 路过的酷友，欢迎  Star，Fork，PR。
 
@@ -54,7 +56,8 @@ __需要`jQuery`__
 
 使用步骤如下：
 
-<hr>
+
+
 
 #### 引入
 
@@ -78,7 +81,8 @@ __需要`jQuery`__
 <script src="./coolapk-emotion-svg.min.js"></script>
 ```
 
-<hr>
+
+
 
 #### 在页面中引用
 
@@ -94,7 +98,8 @@ __需要`jQuery`__
 
 对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
 
-<hr>
+
+
 
 #### 值得注意
 
@@ -106,7 +111,8 @@ svg 版本使用 Symbol 引用的方法（详见下方[关于 Symbol 引用方�
 setCoolapkEmotion();
 ```
 
-<hr>
+
+
 
 另外，<code>png</code> 版本的表情图标有<code>transform</code>属性，以在文本中显示到与文字相平的位置：
 
@@ -139,7 +145,7 @@ setCoolapkEmotion();
 setCoolapkEmotion();
 ```
 
-
+<hr>
 
 ### Hexo使用指南
 
@@ -153,4 +159,12 @@ setCoolapkEmotion();
 <script src="https://coolemotion.netlify.com/png-edition/coolapk-emotion-png.min.js"></script>
 ```
 
-即可在新建的文章中使用。
+即可在新建的文章中使用：
+
+```html
+这是一段话<i class="c-coolb"></i>中间有个酷币
+```
+
+这将引入一个类名为`c-coolb`的图标到这段话中
+
+对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
