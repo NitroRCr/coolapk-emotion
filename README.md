@@ -111,19 +111,6 @@ svg 版本使用 Symbol 引用的方法（详见下方[关于 Symbol 引用方�
 setCoolapkEmotion();
 ```
 
-
-
-
-另外，<code>png</code> 版本的表情图标有<code>transform</code>属性，以在文本中显示到与文字相平的位置：
-
-<code>transform: translateY(0.15em);</code>
-
-某些情况下，您可能不需要此属性，加上<code>.no-transform</code>类名即可：
-
-```html
-<i class="c-coolb no-transform"></i>
-```
-
 <hr>
 
 #### 关于 Symbol 引用方法

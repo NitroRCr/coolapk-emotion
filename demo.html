@@ -1213,12 +1213,6 @@
 也就是说 原<code>&lt;i&gt;</code>标签会被删除，展示的是<code>&lt;svg&gt;</code>标签。页面加载后，如果有新加的&lt;i&gt;标签表情则不会被正常显示，直到调用<code>setCoolapkEmotion()</code>函数再次进行替换。</p>
 <pre><code class="language-javascript">setCoolapkEmotion();
 </code></pre>
-                <hr>
-                另外，<code>png</code> 版本的表情图标有<code>transform</code>属性，以在文本中显示到与文字相平的位置：<br>
-
-<code>transform: translateY(0.15em);</code>
-
-某些情况下，您可能不需要此属性，加上<code>.no-transform</code>类名即可
                 <h3>关于 Symbol 引用方法</h3>
                 <p>以下原理内容您不必了解</p>
                 <p>多色svg图标无法直接使用，为了能够简便使用，这里用了 Symbol 引用方法。</p>
