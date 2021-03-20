@@ -96,7 +96,7 @@ __需要`jQuery`__
 
 这将引入一个类名为`c-coolb`的图标到这段话中
 
-对于每个图标的预览及类名，请看[Demo](https://emotion.texice.xyz/demo.html)页面
+对于每个图标的预览及类名，请看[Demo](https://emotion.krytro.com/demo.html)页面
 
 
 
